@@ -1,0 +1,24 @@
+{
+  "name": "practica-5-node",
+  "version": "1.0.0",
+  "description": "The fifth node practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andresLedema/BackEndS3.git"
+  },
+  "keywords": [
+    "practice",
+    "learn",
+    "node"
+  ],
+  "author": "@andresLedema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresLedema/BackEndS3/issues"
+  },
+  "homepage": "https://github.com/andresLedema/BackEndS3#readme"
+}
