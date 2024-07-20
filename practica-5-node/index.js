@@ -1,15 +1,8 @@
 
 
-//const namesList []
-/*
-console.log("Bienvenido!")
-let name = prompt("Ingresa tu nombre: ")
-
-console.log(`Bienvenido ${name}`)
-*/
-
 const prompt = require("prompt-sync")()
-/*
+
+
 let names = [];
 let name;
 
@@ -21,18 +14,18 @@ while (true) {
   names.push(name);
 }
 
-console.log("Lista de nombres:", names);
-*/
+let totalList = names.length
 
-let names = [];
-let name;
+let longestName = names.reduce((longest, currentName) => {
+  return currentName.length > longest.length ? currentName : longest;
+}, "");
 
-do {
-  name = prompt("Ingresa un nombre (deja vacío y presiona Enter para terminar):");
-  if (name !== "") {
-    names.push(name);
-  }
-} while (name !== "");
+let shortestName = names.reduce((shortest, currentName) => {
+  return currentName.length < shortest.length ? currentName : shortest;
+}, names[0]);
 
-console.log("Lista de nombres:", names);
 
+console.log(`Lista de nombres: ${names}`);
+console.log(`Total de nombres: ${totalList}`)
+console.log(`El nombre mas corto es: ${shortestName}`);
+console.log(`El nombre mas largo es: ${longestName}`);
